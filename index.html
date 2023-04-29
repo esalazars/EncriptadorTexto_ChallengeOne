@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="tipo-entrada">
+                <button>
+                    <img src="imagenes/Logo_alura.png" alt="Logo Alura Latam">
+                </button>
+                <button>
+                    <img src="imagenes/rueda_dentada_gris.png" alt="Rueda dentada color gris">
+                </button>
+            </div>
+            <h1 class="titulo-principal">Encriptador</h1>
+            <div class="contraste">
+                <input type="button" value="Dark">
+                <input type="button" value="Light">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="recepcion">
+            <input type="file" name="Entrada de archivo" id="input-file">
+            <input type="text" name="Entrada de texto" id="input-texto">
+        </section>
+        <section class="procesador">
+            <input type="button" value="Encriptar" id="encriptar">
+            <input type="button" value="Desencriptar" id="desencriptar">
+        </section>
+        <section class="resultado">
+            <textarea name="Salida de texto" id="output-texto" cols="30" rows="10">Esperando procesamiento</textarea>
+            <input type="button" value="Copiar">
+            <input type="button" value="Descargar">
+        </section>
+    </main>
+    <footer>
+        <h2>&#169 Derechos reservados para Eladio Salazar Suarez</h2>
+        <a href="https://www.linkedin.com/in/eladio-salazar-suarez/" target="_blank"><img src="imagenes/Logo_linkdin_azul.png" alt="Logo de LinkedIn">Link de linkedin</a>
+        <a href="https://github.com/esalazars" target="_blank"><img src="imagenes/Logo_github.png" alt="Logo de GitHub">Link de github</a>
+    </footer>
+    <script src="js/animaciones.js"></script>
+    <script src="js/encriptador.js"></script>
+</html>

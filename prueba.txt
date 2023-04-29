@@ -1,0 +1,3 @@
+Este es un contenido de prueba en un archivo
+de texto nombrado prueba.txt que se usara de prueba
+para input tipo file

@@ -59,14 +59,20 @@ function encriptarTexto(){
 }
 //Cargar contenido de input type file en el input-texto
 function cargarArchivo(evento){
+    //Se obtiene la informacion del archivo
     const file = evento.target.files[0];
-    console.log(file);
-    const fileReader = new FileReader();
-    fileReader.readAsText(file);
-    fileReader.onload = function(event) {
-        entradaTexto.value = fileReader.result;
-        console.log(fileReader.result);
-    };
+    //Se crea una expresion regular para evaluar la extension del archivo
+    const extension = new RegExp(/.txt+$/ig);
+    if(file.name.match(extension)){//Si es la extension correcta
+        const fileReader = new FileReader();
+        fileReader.readAsText(file);
+        fileReader.onload = function(event) {//Carga contenido en input de entrada
+            entradaTexto.value = fileReader.result;
+        }
+    }else{
+        entradaTexto.value = '';
+        //console.log("Extension no permitida, solo permite archivos .txt");
+    }    
 }
 //Desencriptar texto
 function desencriptarTexto(){

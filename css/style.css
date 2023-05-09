@@ -1,0 +1,34 @@
+body{
+    background: linear-gradient(rgba(220, 218, 104, 1), 
+    rgba(192, 171, 86, 1), rgba(240, 186, 69, 1));
+}
+header{
+    padding: 10px 10px;
+    background: linear-gradient(180deg, rgba(255,238,35,1) 5%, 
+    rgba(147,121,3,1) 6%, rgba(255,183,40,1) 14%, 
+    rgba(255,238,35,1) 27%, rgba(255,238,35,1) 72%, 
+    rgba(255,183,40,1) 86%, rgba(100,82,0,1) 94%, 
+    rgba(255,238,35,1) 95%);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;    
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+nav .tipo-entrada{
+    background: gray;
+    padding: 5px;
+}
+header button{
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: blue;
+}
+header .tipo-entrada img{
+    padding: 2px;
+    margin: 10px;
+    height: 32px;
+    width: 32px;
+
+}
